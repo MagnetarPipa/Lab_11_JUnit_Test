@@ -30,7 +30,6 @@ public class HelloApplication extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-
         TableView<Triangle> triangle_table = new TableView<Triangle>();
 
         TableColumn<Triangle, String> x1Col = new TableColumn<Triangle, String>("X1");
@@ -75,6 +74,7 @@ public class HelloApplication extends Application {
 
         //--------------------------------------------------------------------------------------------------------------------------------------------------------------
         TableView<Triangle> right_triangle_table = new TableView<Triangle>();
+
 
         TableColumn<Triangle, String> right_x1Col = new TableColumn<Triangle, String>("X1");
         TableColumn<Triangle, String> right_x2Col = new TableColumn<Triangle, String>("X2");
@@ -144,7 +144,8 @@ public class HelloApplication extends Application {
         root.getChildren().add(identicalRightTriangles_label);
 
 
-        stage.getIcons().add(new Image("https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Green_equilateral_triangle_point_up.svg/2363px-Green_equilateral_triangle_point_up.svg.png"));
+       // stage.getIcons().add(new Image("https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Green_equilateral_triangle_point_up.svg/2363px-Green_equilateral_triangle_point_up.svg.png"));
+        stage.getIcons().add(new Image("com/company/lab_10_javafx/Green_triangle.png"));
 
         stage.setTitle("Triangles TableView");//./src/JSON_Ser_Triangles/
 
